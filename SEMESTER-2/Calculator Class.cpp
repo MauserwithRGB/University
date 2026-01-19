@@ -48,10 +48,13 @@ class calculator
 		{
 			cout << "\nEnter two numbers for division: ";
 			cin >> input1 >> input2;
-			
+			if (input2>0){
 			result = input1 / input2;
 			
 			cout << "The result is " << result << endl;
+			}
+			else 
+				cout<<"\nInfinty";
 		}
 		
 		void modulus()
@@ -74,4 +77,5 @@ int main(void)
 	calc.multiply();		
 	calc.divide();
 	
+
 }
