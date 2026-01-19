@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 class calculator
@@ -62,7 +63,7 @@ class calculator
 			cout << "\nEnter two numbers for modulus: ";
 			cin >> input1 >> input2;
 			
-			result = input1 % input2;
+			result = fmod(input1, input2)
 			
 			cout << "The result is " << result << endl;
 		}
@@ -79,3 +80,4 @@ int main(void)
 	
 
 }
+
